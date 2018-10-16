@@ -177,7 +177,7 @@ function submitPreRegister() {
                     jAlert('Usu&aacute;rio j&aacute; cadastrado, por favor, informe outro e-mail.');
                 } else {
                     jInfo("<br><img src=\"/App_Themes/amvox/images/4.gif\" width=\"30\" /><br><br><br><h3>Redirecionando, aguarde...</h3>", "");
-                    window.location.href = "/CadastroUsuario.aspx?email=" + field.val() + "&returnpage=%2fPagamento.aspx";
+                    window.location.href = "cadastro.html?email=" + field.val() + "&returnpage=%2fPagamento.aspx";
                 }
             },
             error: function (txt) {
@@ -497,7 +497,7 @@ function changepassword() {
                 jConfirm('Senha alterada com sucesso!<br><br>Clique em OK para ser redirecionado.', 'Sucesso', function (retorno) {
                     if (retorno) {
                         jInfo("<br><img src=\"/App_Themes/amvox/images/4.gif\" width=\"30\" /><br><br><br><h3>Redirecionando, aguarde...</h3>", "");
-                        window.location.href = '/MinhaConta.aspx';
+                        window.location.href = 'minhaconta.html';
                     }
                 });
             } else {
@@ -973,7 +973,7 @@ function log(user, pass) {
                     }
                     else {
                         jInfo("<br><img src=\"/App_Themes/amvox/images/4.gif\" width=\"30\" /><br><br><br><h3>Redirecionando, aguarde...</h3>", "Identifica&ccedil;&atilde;o do cliente");
-                        if (window.location.pathname == '/Login.aspx' || window.location.pathname == '/CadastroUsuario.aspx') {
+                        if (window.location.pathname == '/Login.aspx' || window.location.pathname == 'cadastro.html') {
                             window.location.href = window.urlnavegacaoloja + '/Default.aspx';
                         } else {
                             window.location.reload();
@@ -1401,7 +1401,7 @@ function finalizeOrder() {
         var last_name = complete_name.split(" ")[complete_name.split(" ").length - 1];
         $.ajax({
             type: 'POST',
-            url: '/CarrinhoCompras.aspx',
+            url: 'carrinho.html',
             data: { FinalizarPedido: "true", Pedidos: JSON.stringify(pedidosJson) },
             dataType: "text",
             success: function (pedidos) {
@@ -2389,7 +2389,7 @@ $(document).ready(function () {
                     var objeto = $.evalJSON(mensagem);
 
                     if (objeto.sucesso) {
-                        setTimeout(function () { kill(); window.location.href = '/MinhaConta.aspx'; }, 3000);
+                        setTimeout(function () { kill(); window.location.href = 'minhaconta.html'; }, 3000);
                         jAlert(objeto.html);
                     }
                     else {
@@ -2610,7 +2610,7 @@ $(document).ready(function () {
                             if (redirect) {
                                 jInfo("<img src=\"/App_Themes/amvox/images/sucess.png\" /><br><br><strong>Produto adicionado ao carrinho com sucesso!</strong><br><br>Processando, aguarde...", "Comprar");
                                 setTimeout(function () {
-                                    window.location.href = '/CarrinhoCompras.aspx';
+                                    window.location.href = 'carrinho.html';
                                 }, 3000);
                             } else {
                                 atualizaSacolaPopUp();
@@ -2649,7 +2649,7 @@ $(document).ready(function () {
                         if (redirect) {
                             jInfo("<img src=\"/App_Themes/amvox/images/sucess.png\" /><br><br><strong>Produto adicionado ao carrinho com sucesso!</strong><br><br>Processando, aguarde...", "Comprar");
                             setTimeout(function () {
-                                window.location.href = '/CarrinhoCompras.aspx';
+                                window.location.href = 'carrinho.html';
                             }, 3000);
                         } else {
                             atualizaSacolaPopUp();
@@ -2691,7 +2691,7 @@ $(document).ready(function () {
                             if (redirect) {
                                 jInfo("<img src=\"/App_Themes/amvox/images/sucess.png\" /><br><br><strong>Produto adicionado ao carrinho com sucesso!</strong><br><br>Processando, aguarde...", "Comprar");
                                 setTimeout(function () {
-                                    window.location.href = '/CarrinhoCompras.aspx';
+                                    window.location.href = 'carrinho.html';
                                 }, 3000);
                             } else {
                                 atualizaSacolaPopUp();
@@ -2730,7 +2730,7 @@ $(document).ready(function () {
                         if (redirect) {
                             jInfo("<img src=\"/App_Themes/amvox/images/sucess.png\" /><br><br><strong>Produto adicionado ao carrinho com sucesso!</strong><br><br>Processando, aguarde...", "Comprar");
                             setTimeout(function () {
-                                window.location.href = '/CarrinhoCompras.aspx';
+                                window.location.href = 'carrinho.html';
                             }, 3000);
                         } else {
                             atualizaSacolaPopUp();
@@ -2761,7 +2761,7 @@ $(document).ready(function () {
         //		if (redirect) {
         //			jInfo("<img src=\"/App_Themes/amvox/images/sucess.png\" /><br><br><strong>Produto adicionado ao carrinho com sucesso!</strong><br><br>Processando, aguarde...", "Comprar");
         //			setTimeout(function () {
-        //				window.location.href = '/CarrinhoCompras.aspx';
+        //				window.location.href = 'carrinho.html';
         //			}, 3000);
         //		} else {
         //			atualizaSacolaPopUp();
@@ -2793,7 +2793,7 @@ $(document).ready(function () {
                 if (retorno.QuantidadeTotalItens > 0) {
                     jInfo("<img src=\"/App_Themes/amvox/images/sucess.png\" /><br><br><strong>Produtos da Sugest&atilde;o Inteligente adicionados ao carrinho com sucesso!</strong><br><br>Processando, aguarde...", "Comprar");
                     setTimeout(function () {
-                        window.location.href = '/CarrinhoCompras.aspx';
+                        window.location.href = 'carrinho.html';
                     }, 3000);
                 } else {
                     jInfo("<img src=\"/App_Themes/amvox/images/error.png\" /><br><br><strong>Falha ao processar a Sugest&atilde;o Inteligente", "Erro");
@@ -3387,7 +3387,7 @@ $(document).ready(function () {
             slidesToScroll: 1
         });
         $("header#initial .wrap_user").live("click", function () {
-            window.location.href = "/MinhaConta.aspx";
+            window.location.href = "minhaconta.html";
         });
     }
     else {

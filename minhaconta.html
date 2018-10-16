@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie9 ie8 ie7 ie6" lang="pt-br"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie9 ie8 ie7" lang="pt-br"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie9 ie8" lang="pt-br"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9" lang="pt-br"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="pt-br">
+<!--<![endif]-->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="App_Themes/amvox/images/favicon.ico" /><link rel="icon" type="image/png" href="App_Themes/amvox/images/favi-logo.png" /><meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1" /><link rel="stylesheet" href="App_Themes/amvox/normalize.css" /><link rel="stylesheet" href="App_Themes/amvox/main.css" /><link rel="stylesheet" media="(max-width: 640px)" href="App_Themes/amvox/mobile.css" />
+	<script src="/Library/Templates/amvox/js/vendor/modernizr-2.6.2.min.js"></script>
+<title>
+	Minha Conta - QCompra
+</title>
+</head>
+
+
+<body id="change_person_physical" onload="dispatchEventTrigger('')">
+<form id="form1" class="changeRegistration">
+	
+
+<script>
+    var urlcarrinho = 'https://www.qcompra.com.br';
+    var urlnavegacaoloja = 'index.html';
+    var urlBusca = 'http:///consulta';
+</script>
+
+
+
+
+
+<ul class="triple-banner mobile-out">
+    
+</ul>
+
+<div class="clearfix"></div>
+
+<header id="initial" style="margin-top: 0">
+    <div class="initial-background">
+        <div class="content">
+            <a href="javascript:void(0)" class="toggle">Abrir menu</a>
+
+            
+            <ul class="initial-cabecalho">
+
+                <li id="logo" class="left">
+                    <a href="index.html" title="QCompra">
+                        <img src="App_Themes/amvox/images/white_logo.png" alt="QCompra" class="initial-logo" />
+                    </a>
+                </li>
+                
+                
+                <li class="initial-usuario left tam-normal">
+                    <img src="App_Themes/amvox/images/user.png" alt="Icone de usuário" class="initial-ico" />
+                    <div class="branco proxima-regular flex-3">
+                        <span class="proxima-bold">Olá, <span id="user_name">otavio</span></span>
+                        <a href="javascript:void(0)" id="logout" class="amarelo">(sair)</a>
+                        <br />
+                        <a href="minhaconta.html" title="Minha Conta" class="amarelo">Minha Conta</a>
+                        <span class="amarelo">|</span>
+                        <a href="meuspedidos.html" title="Meu Pedidos" class="amarelo">Meus Pedidos
+                        </a>
+                    </div>
+                </li>
+                
+
+                
+                <li class="proxima-regular tam-normal links right">
+                    <a href="/conteudo/2/Política-de-entrega" class="amarelo">Política de Privacidade</a>
+                    <a href="/FaleConosco.aspx" class="amarelo">SAC</a>
+                    <a href="#" class="amarelo">Blog</a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+            
+            <ul class="initial-footer right">
+                <li class="initial-footer-carrinho back-amarelo radius-p right">
+                    <a href="carrinho.html">
+                        <img src="App_Themes/amvox/images/carrinho.png" alt="Meu Carrinho" />
+                        <div class="right proxima-bold initial-footer-carrinho__infos shopping_cart">
+                            <strong class="initial-footer-contador product-count tam-pequeno proxima-bold radius-p back-laranja branco product-count">0</strong>
+                            <div class="tam-normal azul">
+                                Meu Carrinho
+                            </div>
+                            <div class=" tam-pequeno laranja right">
+                                R$<span class="price">0,00</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                
+                
+                <li class="initial-footer-search right">
+                    <div class="wrap-search">
+                        <div id="search" class="fx">
+                            <input type="text" placeholder="O que você está procurando?" id="search_query" name="search_query" class="text_field" />
+                            <input type="button" value="pesquisar" id="search_submit" class="branco back-laranja" name="search_submit" />
+                        </div>
+                    </div>
+                </li>
+                <li class="initial-footer-todas right">
+                    <div class="triangulo-esquerdo absolute right"></div>
+                    <select class="absolute proxima-regular tam-normal cinza-escuro back-cinza absolute initial-footer-todas__btn">
+                        <option value="">Todas as Categorias</option>
+                        
+                        
+                        <option style="text-transform: capitalize" value="ÁUDIO">
+                            Áudio
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="CELULAR">
+                            Celular
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="ELETROPORTÁTEIS">
+                            Eletroportáteis
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="FOTO & VÍDEO">
+                            Foto & vídeo
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="TABLET">
+                            Tablet
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="VENTILAÇÃO">
+                            Ventilação
+                        </option>
+                        
+                    </select>
+                    <img src="App_Themes/amvox/images/seta.png" style="margin-left: 156px; margin-top: 17px; position: absolute; z-index: 99;" alt="QCompra" />
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu bg-dark-blue right mt-20" style="width: 100%">
+            <div class="content">
+                <ul class="links-menu">
+                    <li class="initial-footer-todas-2 dropdown">
+                        <a href="javascript:void(0);" class="back-laranja-menu branco maiuscula proxima-bold tam-normal sem-borda">Todas as Categorias
+                        </a>
+                        
+                        <ul class="dropdown-content left-0">
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=%c3%81udio">Áudio</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=%c3%81udio&f_categoria=Caixa+Amplificada">
+                                            Caixa Amplificada
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=%c3%81udio&f_categoria=Autorr%c3%a1dio">
+                                            Autorrádio
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=%c3%81udio&f_categoria=Boombox">
+                                            Boombox
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Celular">Celular</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Celular&f_categoria=Celular+Barrinha">
+                                            Celular Barrinha
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Eletroport%c3%a1teis">Eletroportáteis</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Ferro+de+Passar">
+                                            Ferro de Passar
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Panela+El%c3%a9trica">
+                                            Panela Elétrica
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Bebedouro">
+                                            Bebedouro
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Churrasqueira+El%c3%a9trica">
+                                            Churrasqueira Elétrica
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Cafeteira">
+                                            Cafeteira
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Espremedor">
+                                            Espremedor
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Sanduicheira">
+                                            Sanduicheira
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Forno+El%c3%a9trico">
+                                            Forno Elétrico
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Pipoqueira">
+                                            Pipoqueira
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Foto+%26+V%c3%addeo">Foto & Vídeo</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=Conversor+Digital">
+                                            Conversor Digital
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=TV+Box">
+                                            TV Box
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=C%c3%a2mera+Digital">
+                                            Câmera Digital
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=DVD">
+                                            DVD
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Tablet">Tablet</a>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Ventila%c3%a7%c3%a3o">Ventilação</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Ventila%c3%a7%c3%a3o&f_categoria=Ventilador">
+                                            Ventilador
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Ventila%c3%a7%c3%a3o&f_categoria=Climatizador">
+                                            Climatizador
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+
+                    
+                    
+                    <li class="individual-links dropdown">
+                        <a href="/consulta?f_secao=%c3%81udio" style="line-height: 50px">
+                            <img src="i/amvox/categoria/201896143810.png" alt="QCompra" onerror="this.style.display = 'none'">
+                            Áudio
+                        </a>
+                        
+                        <ul class="dropdown-content left-0">
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=%c3%81udio&f_categoria=Caixa+Amplificada" style="">Caixa Amplificada</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=%c3%81udio&f_categoria=Autorr%c3%a1dio" style="">Autorrádio</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=%c3%81udio&f_categoria=Boombox" style="">Boombox</a>
+                                
+                            </li>
+                            
+
+                          
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="individual-links dropdown">
+                        <a href="/consulta?f_secao=Eletroport%c3%a1teis" style="line-height: 50px">
+                            <img src="i/amvox/categoria/201896143824.png" alt="QCompra" onerror="this.style.display = 'none'">
+                            Eletroportáteis
+                        </a>
+                        
+                        <ul class="dropdown-content left-0">
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Ferro+de+Passar" style="">Ferro de Passar</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Panela+El%c3%a9trica" style="">Panela Elétrica</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Bebedouro" style="">Bebedouro</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Churrasqueira+El%c3%a9trica" style="">Churrasqueira Elétrica</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Cafeteira" style="">Cafeteira</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Espremedor" style="">Espremedor</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Sanduicheira" style="">Sanduicheira</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Forno+El%c3%a9trico" style="">Forno Elétrico</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Pipoqueira" style="">Pipoqueira</a>
+                                
+                            </li>
+                            
+
+                          
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="individual-links dropdown">
+                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo" style="line-height: 50px">
+                            <img src="i/amvox/categoria/201896143843.png" alt="QCompra" onerror="this.style.display = 'none'">
+                            Foto & Vídeo
+                        </a>
+                        
+                        <ul class="dropdown-content left-0">
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=Conversor+Digital" style="">Conversor Digital</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=TV+Box" style="">TV Box</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=C%c3%a2mera+Digital" style="">Câmera Digital</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=DVD" style="">DVD</a>
+                                
+                            </li>
+                            
+
+                          
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="menu-blackfriday">
+                        <a href="javascript:void(0)">
+                            <img src="App_Themes/amvox/images/bg_blackfriday.png" alt="QCompra" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <nav class="main mobile-out">
+        <div class="content">
+            
+            <ul>
+                <li class="all">
+                    
+                    
+                    <div class="box" style="margin-top: -40px;">
+                        
+                        
+                    </div>
+                    
+                </li>
+                
+                
+            </ul>
+        </div>
+    </nav>
+
+    
+</header>
+<main class="engloba-tudo">
+
+	<div class="clearfix"></div>
+	<section id="main">
+		<div class="content main">
+			<div class="history mobile-out">
+				<strong>Você está em:</strong>&nbsp;<a href="index.html" title="Página Inicial">Início</a> - Minha conta
+			</div>
+			<h2 class="home_title maiuscula proxima-regular tam-x-grande azul" style="border-bottom: 3px solid #ededed;margin-bottom: 40px;">
+				<span>
+					Minha Conta:
+				</span>
+			</h2>
+			
+			<input type="hidden" id="usrId" name="usrId" value="84052"/>
+			<input type="hidden" id="usrEmail" name="usrEmail" value="otavio.silva@openk.com.br"/>
+			
+			<input type="hidden" id="addressId" name="addressId" value="78470"/>
+			<div class="clearfix"></div>
+			<br />
+
+			<div class="account_tab_content">
+				
+				<div class="form_fields" style="width: 580px">
+                    <h3>Meus Dados</h3>
+					<p>
+						<label class="large"><strong>Ol&aacute;, otavio<br /> <a href="login.html" id="exchangeAccount">n&atilde;o &eacute; voc&ecirc;?</a></strong></label>
+					</p>
+					<input type="submit" class="btn-red btn-alteracoes" value="CONFIRMAR ALTERAÇÕES" style="margin-top: 0!important;"/>
+
+					
+					
+
+					<div class="clearfix"></div>
+					<div class="display_field first">
+						<label for="nome">Nome completo: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" id="nome" name="nome" class="textfield input-troca" style="width: 370px" value="otavio" />
+					</div>
+					<div class="clearfix"></div>
+
+					
+
+					<div class="display_field first">
+						<label for="email">E-mail: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" id="email" name="email" class="textfield input-troca" style="width: 370px; border: 1px solid #c6c8ca;" value="otavio.silva@openk.com.br" disabled="disabled" />
+					</div>
+					<div class="clearfix"></div>
+
+					
+
+					<div class="display_field" style="padding: 0;">
+						<label for="datanascimento">Data de Nascimento: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" id="datanascimento" name="datanascimento" class="calendario textfield input-troca" maxlength="10" style="width: 110px;" value="29/09/1992 00:00:00" />
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+
+					
+					<div class="display_field first">
+						<label for="cpf">CPF: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" id="cpf" name="cpf" class="mask-cpf textfield input-troca" style="width: 110px" value="05160816321" />
+						<div class="clearfix"></div>
+					</div>
+
+					<div class="display_field">
+						<label for="rg">Identidade: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" id="rg" name="rg" maxlength="15" class="textfield input-troca" style="width: 110px; margin-top: 5px;" value="2005009236955" />
+						<div class="clearfix"></div>
+					</div>
+
+					<div class="display_field">
+						<label for="orgaoexpeditor">Órgão emissor: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" id="orgaoexpeditor" maxlength="5" name="orgaoexpeditor" class="textfield input-troca" style="width: 110px; margin-top: 5px;" value="SSP" />
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+					
+
+					<h4>Dados para contato</h4>
+					<br />
+					<div class="display_field first">
+						<label for="telefoneNumero">Telefone Residencial: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" id="telefoneNumero" name="telefoneNumero" class="textfield mask-telefone input-troca" style="width: 163px" value="" />
+						<div class="clearfix"></div>
+					</div>
+
+					<div class="display_field">
+						<label for="celularNumero">Telefone Celular: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" class="mask-telefone textfield input-troca" id="celularNumero" name="celularNumero" style="width: 163px; margin-top: 5px;" value="(34)998857725" />
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+
+					<h4>Dados de segurança</h4>
+					<br />
+					<label for="senha">Senha atual: <span class="red obrigatorio-vermelho">*</span></label>
+					<div class="clearfix"></div>
+					<input type="password" id="senha" name="senha" class="textfield input-troca" style="width: 163px;" />
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				<br />
+				<br />
+				
+				<input type="submit" class="btn-red" value="CONFIRMAR ALTERAÇÕES" />
+				<div class="clearfix"></div>
+				<br />
+				<br />
+			</div>
+			<div class="aside_account">
+                <div class="put-border">
+                    <a href="javascript:void(0)" class="tab active" title="MEUS DADOS"><span class="bgDados"></span>Meus <strong>Dados</strong></a>
+				    <div class="box active">
+					    <h4>Endereço de entrega:</h4>
+					    <p class="dados-conteudo">
+						    Rua&nbsp;Tomazinho Rezende,&nbsp;1074,&nbsp;-&nbsp;Bairro Daniel Fonseca.<br />
+						    Cep: 38400326 - Uberlândia - MG
+					    </p>
+					    <a href="javascript:void(0)" title="Alterar" class="edit modal-window btn-black center" id="link_change_address" data-object="#frm-change-address" data-title="Editar Endereço" data-callback="rebuildChangeAddress()">EDITAR</a>
+				    </div>
+				    <div class="box links">
+					    <h4>Atualize seus dados cadastrais:</h4>
+					    <a href="trocarsenha.html" class="dados-conteudo sem-borda-direita">Altere sua senha</a>
+					    <a href="cadastroendereco.html" class="dados-conteudo">Veja seus endereços de entrega</a>
+				    </div>
+				    <div class="box links">
+					    <h4>Meus pedidos:</h4>
+					    
+					    <a href="meuspedidos.html" class="dados-conteudo tam-normal sem-borda-direita">Selecionar pedidos desejados</a>
+					    <a href="meuspedidos.html" class="dados-conteudo tam-normal sem-borda-direita">Ver pedidos</a>
+				    </div>
+				    <div class="box links">
+					    <h4>Outros serviços:</h4>
+					    <a href="/FaleConosco.aspx" title="Central de atendimento" class="dados-conteudo tam-normal sem-borda-direita">Canal de atendimento</a>
+					    <a href="/conteudo/46/Trocas-e-Devoluções" title="Trocas e Devoluções" class="dados-conteudo tam-normal sem-borda-direita">Trocas e Devoluções</a>
+					    <a href="/conteudo/47/Pol&iacute;tica-de-privacidade" title="Política de privacidade" class="dados-conteudo tam-normal">Política de privacidade</a>
+				    </div>
+                </div>
+
+				<a href="trocarsenha.html" class="tab" title="Trocar senha"><span class="bgSenha"></span>Trocar <strong>minha senha</strong></a>
+				<a href="cadastroendereco.html" class="tab" title="Endereços de entrega"><span class="bgEndereco"></span>Endereço <strong>de Entrega</strong></a>
+				<a href="meuspedidos.html" class="tab featured" title="Acompanhe seu pedido">Acompanhe <strong>seu pedido</strong></a>
+			</div>
+
+			
+			<div id="frm-change-address" class="hidden">
+				<div class="form_fields frm_change_address" style="width: 420px">
+					<div class="loader">
+						<div class="message"></div>
+					</div>
+					<div class="display_field first" style="width: 420px">
+						<label for="change-cep">CEP: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" class="mask-cep textfield needed input-troca" id="change-cep" name="change-cep" value="38400326" style="width: 95px" />
+						<input type="button" id="search-change-cep" name="search-change-cep" value="Ok" class="btn-black small" style="margin-top: 5px;" />
+						<div class="link-cep robotomedium" style="margin-top: 10px; margin-right: 100px;">
+							<a href="http://www.buscacep.correios.com.br/" target="_blank" 
+											style="font-family: proxima_nova_rgregular, sans-serif;
+														color: #35befe;
+							">
+								Não sei meu CEP
+
+							</a>        (consultar)
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+					<div class="display_field first">
+						<label for="change-addressX">Endereço: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" class="textfield needed input-troca" id="change-addressX" name="change-addressX" value="Tomazinho Rezende" style="width: 300px" />
+					</div>
+					<div class="display_field">
+						<label for="change-number">Número: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" class="numeric textfield needed input-troca" name="change-number" id="change-number" value="1074" style="width: 60px; margin-top: 5px;" />
+					</div>
+					<div class="clearfix"></div>
+
+					<div class="display_field first">
+						<label for="change-complement">Complemento:</label>
+						<div class="clearfix"></div>
+						<input type="text" class="textfield input-troca" id="change-complement" name="change-complement" value="" style="width: 180px" />
+					</div>
+
+					<div class="display_field">
+						<label for="change-reference">Referência: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" class="textfield needed input-troca" id="change-reference" name="change-reference" value="Na rua de baixa da uniube" style="width: 180px; margin-top: 5px;" />
+					</div>
+					<div class="clearfix"></div>
+
+					<div class="display_field first">
+						<label for="change-neighborhood">Bairro: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" class="textfield needed input-troca" id="change-neighborhood" name="change-neighborhood" value="Daniel Fonseca" style="width: 180px" />
+					</div>
+
+					<div class="display_field">
+						<label for="change-city">Cidade: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="text" class="textfield needed input-troca" id="change-city" name="change-city" value="Uberlândia" style="width: 180px; margin-top: 5px;" />
+					</div>
+					<div class="clearfix"></div>
+
+					<div class="display_field first">
+						<label for="change-state">Estado: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<select id="change-state" name="change-state" style="width: 198px" class="needed">
+							<option value="-1">Selecione</option>
+							
+							<option value="AC" >Acre</option>
+							
+							<option value="AL" >Alagoas</option>
+							
+							<option value="AM" >Amazonas</option>
+							
+							<option value="AP" >Amapá</option>
+							
+							<option value="BA" >Bahia</option>
+							
+							<option value="CE" >Ceará</option>
+							
+							<option value="DF" >Distrito Federal</option>
+							
+							<option value="ES" >Espírito Santo</option>
+							
+							<option value="GO" >Goiás</option>
+							
+							<option value="MA" >Maranhão</option>
+							
+							<option value="MG" selected='selected'>Minas Gerais</option>
+							
+							<option value="MS" >Mato Grosso do Sul</option>
+							
+							<option value="MT" >Mato Grosso</option>
+							
+							<option value="PA" >Pará</option>
+							
+							<option value="PB" >Paraíba</option>
+							
+							<option value="PE" >Pernambuco</option>
+							
+							<option value="PI" >Piauí</option>
+							
+							<option value="PR" >Paraná</option>
+							
+							<option value="RJ" >Rio de Janeiro</option>
+							
+							<option value="RN" >Rio Grande do Norte</option>
+							
+							<option value="RO" >Rondônia</option>
+							
+							<option value="RR" >Roraima</option>
+							
+							<option value="RS" >Rio Grande do Sul</option>
+							
+							<option value="SC" >Santa Catarina</option>
+							
+							<option value="SE" >Sergipe</option>
+							
+							<option value="SP" >São Paulo</option>
+							
+							<option value="TO" >Tocantins</option>
+							
+						</select>
+					</div>
+					<div class="clearfix"></div>
+
+					<div class="display_field first" style="width: 100%">
+						<label for="change-password">Senha atual: <span class="red obrigatorio-vermelho">*</span></label>
+						<div class="clearfix"></div>
+						<input type="button" class="flt_right right btn-red small" id="change-submit" name="change-submit" value="Concluído" style="margin-top: 5px;"/>
+						<input type="password" id="change-password" name="change-password" class="textfield needed input-troca" style="width: 180px" />
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="clearfix"></div>
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+<div class="clearfix"></div>
+</main>
+<section class="footer-search mobile-out back-laranja" id="rodape">
+	<div class="content">
+		<h3 class="maiuscula proxima-regular left">Ainda não encontrou o que procura?</h3>
+		<div class="form">
+			<ul class="right">
+				<li class="initial-footer-search right">
+					<div class="wrap-search">
+						<div class="fx">
+							<input type="text" placeholder="O que você está procurando?" id="search_query_2" name="search_query_2" class="text_field" />
+							<input type="button" value="pesquisar" id="search_submit_2" class="branco back-azul" name="search_submit_2" />
+						</div>
+					</div>
+				</li>
+				<li class="initial-footer-todas right">
+					<div class="triangulo-esquerdo absolute right"></div>
+					<select class="absolute proxima-regular tam-normal cinza-escuro back-cinza absolute initial-footer-todas__btn">
+						<option value="" style="text-transform: none;"> Todas as Categorias</option>
+							
+							
+								<option style="text-transform: capitalize" value="ÁUDIO">
+										Áudio
+								</option>
+							
+								<option style="text-transform: capitalize" value="ELETROPORTÁTEIS">
+										Eletroportáteis
+								</option>
+							
+								<option style="text-transform: capitalize" value="FOTO & VÍDEO">
+										Foto & vídeo
+								</option>
+							
+					</select>
+					<img src="App_Themes/amvox/images/seta.png" style="margin-left: 156px; margin-top: 17px; position: absolute; z-index: 99;" alt="QCompra"/>
+				
+					
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</section>
+<footer class="main-footer mobile-out back-azul">
+    <div class="content">
+		<div class="footer-empresa left">
+			<div>
+				<img src="App_Themes/amvox/images/novo-logo.png" width="220" height="50" alt="QCompra"/>
+			</div>
+			<div class="footer-empresa-sociais texto-centro">
+                <a href="https://www.facebook.com/qcompraoficial2018" target="_blank">
+				    <img src="App_Themes/amvox/images/FACE.png" alt="QCompra"/>
+                </a>
+                <a href="https://www.instagram.com/qcompra/" target="_blank">
+				    <img src="App_Themes/amvox/images/instagram_icon_footer.png" alt="QCompra"/>
+                </a>
+			</div>
+			<div class="proxima-regular tam-pequeno branco">
+				<p>
+					
+					<link href="" rel="stylesheet" type="text/css" />
+<!--CSS_site-->
+<link href="" rel="stylesheet" type="text/css" />
+<!--CSS_site-->
+<link href="" rel="stylesheet" type="text/css" />
+<!--CSS_site-->
+<link href="" rel="stylesheet" type="text/css" />
+<!--CSS_site--><!--CSS_site-->
+<p>
+	&nbsp;</p>
+<p style="text-align: center;">
+	<span style="font-size:16px;"><strong>Sua compra em um clique</strong></span></p>
+				</p>
+			</div>
+		</div>
+		<div class="left footer-departamentos">
+			<h3 class="proxima-regular maiuscula tam-x-grande branco">
+				Nossos Departamentos:
+			</h3>
+			<div class="open-regular tam-normal">
+				<ul>
+					
+					
+					<li class="left" >
+						<a href="/consulta?f_secao=%c3%81udio" title="Áudio" style=" text-transform: capitalize;">
+								áudio
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Celular" title="Celular" style=" text-transform: capitalize;">
+								celular
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Eletroport%c3%a1teis" title="Eletroportáteis" style=" text-transform: capitalize;">
+								eletroportáteis
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Foto+%26+V%c3%addeo" title="Foto & Vídeo" style=" text-transform: capitalize;">
+								foto & vídeo
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Tablet" title="Tablet" style=" text-transform: capitalize;">
+								tablet
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Ventila%c3%a7%c3%a3o" title="Ventilação" style=" text-transform: capitalize;">
+								ventilação
+						</a>
+					</li>
+				    
+
+
+					
+				</ul>
+			</div>
+		</div>
+        
+		    
+    </div>
+	<div class="clearfix"></div>
+</footer>
+<footer class="back-cinza-claro">
+	<div class="footer-meio centro">
+		<div class="footer-meio-atendimento left cinza-escuro tam-normal proxima-regular">
+			<div class="proxima-bold">
+				Atendimento 
+				
+				
+<!--CSS_site-->
+<br />
+<strong>Funcionamento:</strong>Segunda &agrave; Sexta, das 08h00 &agrave;s 17h30<br />
+<strong>Email:</strong> contato@qcompra.com.br
+			</div>
+			<div>
+				<span class="proxima-bold maiuscula">Sac:</span> 
+				
+				
+<!--CSS_site-->
+
+<!--CSS_site--><!--CSS_site-->(71) 2886-0105
+			</div>
+			<br />
+			<div class="proxima-bold">
+				QCompra
+			</div>
+			<div>
+				
+				
+<!--CSS_site-->
+
+<!--CSS_site-->
+
+<!--CSS_site--><!--CSS_site-->Rua B, POLOPLAST, S/N, Galp&atilde;o, Bairro Jardim Limoeiro - Cama&ccedil;ari-BA<br />
+<strong>CEP:</strong> 42.802-580<br />
+				
+				
+<!--CSS_site-->
+
+<!--CSS_site--><!--CSS_site-->30.311.794/0001-75
+			</div>
+		</div>
+		<div class="left footer-meio-links">
+			<div class="proxima-regular tam-normal">
+				<ul>
+					<li class="left">
+						<a href="/conteudo/1/Politica-de-Entrega">Politica de Entrega</a>
+					</li>
+					<li class="left">
+						<a href="/conteudo/2/Politica-de-Entrega">Política de privacidade</a>
+					</li>
+					<li class="left">
+						<a href="/conteudo/3/Politica-de-Entrega">Política de troca</a>
+					</li>
+					<li class="left">
+						<a href="/conteudo/4/Politica-de-Entrega">Termos e condições</a>
+					</li>
+					<li class="left">
+						<a href="/FaleConosco.aspx">Fale Conosco</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-meio-pagamentos left">
+			<div class="wrapper">
+				
+				<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_125X125.jpg?v=1" alt="Mercado Pago" title="Mercado Pago" />
+				
+                <div class="footer-empresa-seguro" style="display: block;float: right;margin-top: 0">
+				    <img src="App_Themes/amvox/images/SITE-SEGURO.png" alt="QCompra"/>
+                    <div class="clearfix"></div>
+                    <img src="App_Themes/amvox/images/RapidSSL.gif" alt="QCompra" height="50"/>
+			    </div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+		
+
+	
+<div class="clearfix"></div>
+<div class="development proxima-regular tam-pequeno azul">
+	Desenvolvido por: <a href="http://www.cuboamarelo.com" title="Cubo Amarelo" target="_blank">Cubo Amarelo</a> • Tecnologia: <a href="http://www.openk.com.br" title="OpenK" target="_blank">OpenK</a>
+</div>
+
+<!-- BEGIN JIVOSITE CODE -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'shAaPXxDXO';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- END JIVOSITE CODE -->
+
+<script type="text/javascript">
+                          var _gaq = _gaq || [];
+                          _gaq.push(['_setAccount', 'UA--1']);
+                          _gaq.push(['_trackPageview']);
+                          (function() {
+                            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                          })();
+                        </script>
+<script src="/Library/Templates/amvox/js/plugins.js?1585345"></script>
+<script src="/Library/JavaScript/Global/FrameWork/jquery.validate.1.5.2.js" ></script>
+<script src="/jquery/jquery-validate/localization/messages_ptbr.js" ></script>
+<script src="/Library/Templates/amvox/js/main.js?1585345"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5922e1c6c4fd4ea8"></script> 
+	
+
+</form>
+</body>
+</html>

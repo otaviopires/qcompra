@@ -1,0 +1,1167 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie9 ie8 ie7 ie6" lang="pt-br"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie9 ie8 ie7" lang="pt-br"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie9 ie8" lang="pt-br"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9" lang="pt-br"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="pt-br">
+<!--<![endif]-->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="App_Themes/amvox/images/favicon.ico" /><link rel="icon" type="image/png" href="App_Themes/amvox/images/favi-logo.png" /><meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1" /><link rel="stylesheet" href="App_Themes/amvox/normalize.css" /><link rel="stylesheet" href="App_Themes/amvox/main.css" /><link rel="stylesheet" media="(max-width: 640px)" href="App_Themes/amvox/mobile.css" />
+	<script src="/Library/Templates/amvox/js/vendor/modernizr-2.6.2.min.js"></script>
+<title>
+	Pagamento - QCompra
+</title>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="./Pagamento.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTM5NTk5NjcxD2QWAmYPZBYCAgMPZBYCAgEPZBYCAgEPZBYCAgEPZBYEAgEPZBYCZg9kFgJmDxYCHgtfIUl0ZW1Db3VudAIDFgYCAQ9kFgICAQ9kFgJmD2QWCGYPFQUGNCBkaWFzHUVudHJlZ2EgZW0gYXTDqSA0IGRpYXMgw7p0ZWlzDDE3MDgsNjc2OTk3NQVTRURFWAEzZAIBDxYCHgRUZXh0BQVTRURFWGQCAg8WAh4FVmFsb3IFDDE3MDgsNjc2OTk3NWQCAw8WAh8BBR1FbnRyZWdhIGVtIGF0w6kgNCBkaWFzIMO6dGVpc2QCAg9kFgICAQ9kFgJmD2QWCGYPFQUHMTAgZGlhcx5FbnRyZWdhIGVtIGF0w6kgMTAgZGlhcyDDunRlaXMLODI2LDkzMTEyNzUDUEFDATJkAgEPFgIfAQUDUEFDZAICDxYCHwIFCzgyNiw5MzExMjc1ZAIDDxYCHwEFHkVudHJlZ2EgZW0gYXTDqSAxMCBkaWFzIMO6dGVpc2QCAw9kFgICAQ9kFgJmD2QWCGYPFQUHMTUgZGlhcw4xNSBkaWFzIMO6dGVpcx41MTgsNDQ2OTU1ODMzMzMzMzMzMzMzMzMzMzMzMzMQVHJhbnNwb3J0YWRvcmEgMQE2ZAIBDxYCHwEFEFRyYW5zcG9ydGFkb3JhIDFkAgIPFgIfAgUeNTE4LDQ0Njk1NTgzMzMzMzMzMzMzMzMzMzMzMzMzZAIDDxYCHwEFDjE1IGRpYXMgw7p0ZWlzZAICD2QWAmYPZBYEZg8WAh8AAgEWAmYPZBYCZg8VDQZoaWRkZW4DMjY1R2h0dHBzOi8vaW1nbXAubWxzdGF0aWMuY29tL29yZy1pbWcvTUxCL01QL0JBTk5FUlMvdGlwbzJfMTI1WDEyNS5qcGc/dj0xDE1lcmNhZG8gUGFnbwxNZXJjYWRvIFBhZ28DMjY1DE1lcmNhZG8gUGFnbwMyNjUMTWVyY2FkbyBQYWdvAzI2NQgzLjExMiw5MAIxNwIxMGQCAg8WAh8AAggWEGYPZBYCZg8VDQR2aXNhOmh0dHBzOi8vd3d3Lm1lcmNhZG9wYWdvLmNvbS9vcmctaW1nL01QMy9BUEkvbG9nb3MvdmlzYS5naWYEVmlzYQRWaXNhBHZpc2EEVmlzYQR2aXNhBFZpc2EEdmlzYQgzLjExMiw5MAtjcmVkaXRfY2FyZDpodHRwczovL3d3dy5tZXJjYWRvcGFnby5jb20vb3JnLWltZy9NUDMvQVBJL2xvZ29zL3Zpc2EuZ2lmCXN1cHBvcnRlZGQCAQ9kFgJmDxUNBm1hc3RlcjxodHRwczovL3d3dy5tZXJjYWRvcGFnby5jb20vb3JnLWltZy9NUDMvQVBJL2xvZ29zL21hc3Rlci5naWYKTWFzdGVyY2FyZApNYXN0ZXJjYXJkBm1hc3RlcgpNYXN0ZXJjYXJkBm1hc3RlcgpNYXN0ZXJjYXJkBm1hc3RlcggzLjExMiw5MAtjcmVkaXRfY2FyZDxodHRwczovL3d3dy5tZXJjYWRvcGFnby5jb20vb3JnLWltZy9NUDMvQVBJL2xvZ29zL21hc3Rlci5naWYJc3VwcG9ydGVkZAICD2QWAmYPFQ0JaGlwZXJjYXJkP2h0dHBzOi8vd3d3Lm1lcmNhZG9wYWdvLmNvbS9vcmctaW1nL01QMy9BUEkvbG9nb3MvaGlwZXJjYXJkLmdpZglIaXBlcmNhcmQJSGlwZXJjYXJkCWhpcGVyY2FyZAlIaXBlcmNhcmQJaGlwZXJjYXJkCUhpcGVyY2FyZAloaXBlcmNhcmQIMy4xMTIsOTALY3JlZGl0X2NhcmQ/aHR0cHM6Ly93d3cubWVyY2Fkb3BhZ28uY29tL29yZy1pbWcvTVAzL0FQSS9sb2dvcy9oaXBlcmNhcmQuZ2lmCXN1cHBvcnRlZGQCAw9kFgJmDxUNBGFtZXg6aHR0cHM6Ly93d3cubWVyY2Fkb3BhZ28uY29tL29yZy1pbWcvTVAzL0FQSS9sb2dvcy9hbWV4LmdpZhBBbWVyaWNhbiBFeHByZXNzEEFtZXJpY2FuIEV4cHJlc3MEYW1leBBBbWVyaWNhbiBFeHByZXNzBGFtZXgQQW1lcmljYW4gRXhwcmVzcwRhbWV4CDMuMTEyLDkwC2NyZWRpdF9jYXJkOmh0dHBzOi8vd3d3Lm1lcmNhZG9wYWdvLmNvbS9vcmctaW1nL01QMy9BUEkvbG9nb3MvYW1leC5naWYJc3VwcG9ydGVkZAIED2QWAmYPFQ0GZGluZXJzPGh0dHBzOi8vd3d3Lm1lcmNhZG9wYWdvLmNvbS9vcmctaW1nL01QMy9BUEkvbG9nb3MvZGluZXJzLmdpZgZEaW5lcnMGRGluZXJzBmRpbmVycwZEaW5lcnMGZGluZXJzBkRpbmVycwZkaW5lcnMIMy4xMTIsOTALY3JlZGl0X2NhcmQ8aHR0cHM6Ly93d3cubWVyY2Fkb3BhZ28uY29tL29yZy1pbWcvTVAzL0FQSS9sb2dvcy9kaW5lcnMuZ2lmCXN1cHBvcnRlZGQCBQ9kFgJmDxUNA2VsbzlodHRwczovL3d3dy5tZXJjYWRvcGFnby5jb20vb3JnLWltZy9NUDMvQVBJL2xvZ29zL2Vsby5naWYDRWxvA0VsbwNlbG8DRWxvA2VsbwNFbG8DZWxvCDMuMTEyLDkwC2NyZWRpdF9jYXJkOWh0dHBzOi8vd3d3Lm1lcmNhZG9wYWdvLmNvbS9vcmctaW1nL01QMy9BUEkvbG9nb3MvZWxvLmdpZglzdXBwb3J0ZWRkAgYPZBYCZg8VDQNwZWM5aHR0cHM6Ly93d3cubWVyY2Fkb3BhZ28uY29tL29yZy1pbWcvTVAzL0FQSS9sb2dvcy9wZWMuZ2lmIVBhZ2FtZW50byBuYSBsb3TDqXJpY2Egc2VtIGJvbGV0byFQYWdhbWVudG8gbmEgbG90w6lyaWNhIHNlbSBib2xldG8DcGVjIVBhZ2FtZW50byBuYSBsb3TDqXJpY2Egc2VtIGJvbGV0bwNwZWMhUGFnYW1lbnRvIG5hIGxvdMOpcmljYSBzZW0gYm9sZXRvA3BlYwgzLjExMiw5MAZ0aWNrZXQ5aHR0cHM6Ly93d3cubWVyY2Fkb3BhZ28uY29tL29yZy1pbWcvTVAzL0FQSS9sb2dvcy9wZWMuZ2lmCXN1cHBvcnRlZGQCBw9kFgJmDxUNC2JvbGJyYWRlc2NvQWh0dHBzOi8vd3d3Lm1lcmNhZG9wYWdvLmNvbS9vcmctaW1nL01QMy9BUEkvbG9nb3MvYm9sYnJhZGVzY28uZ2lmBkJvbGV0bwZCb2xldG8LYm9sYnJhZGVzY28GQm9sZXRvC2JvbGJyYWRlc2NvBkJvbGV0bwtib2xicmFkZXNjbwgzLjExMiw5MAZ0aWNrZXRBaHR0cHM6Ly93d3cubWVyY2Fkb3BhZ28uY29tL29yZy1pbWcvTVAzL0FQSS9sb2dvcy9ib2xicmFkZXNjby5naWYOZG9lc19ub3RfYXBwbHlkZN2/wVSsGSg2/BYgDD/1N7Lfrdbaog9/OXNSzs0pNzkq" />
+</div>
+
+	
+
+<script>
+    var urlcarrinho = 'https://www.qcompra.com.br';
+    var urlnavegacaoloja = 'index.html';
+    var urlBusca = 'http:///consulta';
+</script>
+
+
+
+
+
+<ul class="triple-banner mobile-out">
+    
+</ul>
+
+<div class="clearfix"></div>
+
+<header id="initial" style="margin-top: 0">
+    <div class="initial-background">
+        <div class="content">
+            <a href="javascript:void(0)" class="toggle">Abrir menu</a>
+
+            
+            <ul class="initial-cabecalho">
+
+                <li id="logo" class="left">
+                    <a href="index.html" title="QCompra">
+                        <img src="App_Themes/amvox/images/white_logo.png" alt="QCompra" class="initial-logo" />
+                    </a>
+                </li>
+                
+                
+                <li class="initial-usuario left tam-normal">
+                    <img src="App_Themes/amvox/images/user.png" alt="Icone de usuário" class="initial-ico" />
+                    <div class="branco proxima-regular flex-3">
+                        <span class="proxima-bold">Olá, <span id="user_name">otavio</span></span>
+                        <a href="javascript:void(0)" id="logout" class="amarelo">(sair)</a>
+                        <br />
+                        <a href="minhaconta.html" title="Minha Conta" class="amarelo">Minha Conta</a>
+                        <span class="amarelo">|</span>
+                        <a href="meuspedidos.html" title="Meu Pedidos" class="amarelo">Meus Pedidos
+                        </a>
+                    </div>
+                </li>
+                
+
+                
+                <li class="proxima-regular tam-normal links right">
+                    <a href="/conteudo/2/Política-de-entrega" class="amarelo">Política de Privacidade</a>
+                    <a href="/FaleConosco.aspx" class="amarelo">SAC</a>
+                    <a href="#" class="amarelo">Blog</a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+            
+            <ul class="initial-footer right">
+                <li class="initial-footer-carrinho back-amarelo radius-p right">
+                    <a href="carrinho.html">
+                        <img src="App_Themes/amvox/images/carrinho.png" alt="Meu Carrinho" />
+                        <div class="right proxima-bold initial-footer-carrinho__infos shopping_cart">
+                            <strong class="initial-footer-contador product-count tam-pequeno proxima-bold radius-p back-laranja branco product-count">0</strong>
+                            <div class="tam-normal azul">
+                                Meu Carrinho
+                            </div>
+                            <div class=" tam-pequeno laranja right">
+                                R$<span class="price">0,00</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                
+                
+                <li class="initial-footer-search right">
+                    <div class="wrap-search">
+                        <div id="search" class="fx">
+                            <input type="text" placeholder="O que você está procurando?" id="search_query" name="search_query" class="text_field" />
+                            <input type="button" value="pesquisar" id="search_submit" class="branco back-laranja" name="search_submit" />
+                        </div>
+                    </div>
+                </li>
+                <li class="initial-footer-todas right">
+                    <div class="triangulo-esquerdo absolute right"></div>
+                    <select class="absolute proxima-regular tam-normal cinza-escuro back-cinza absolute initial-footer-todas__btn">
+                        <option value="">Todas as Categorias</option>
+                        
+                        
+                        <option style="text-transform: capitalize" value="ÁUDIO">
+                            Áudio
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="CELULAR">
+                            Celular
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="ELETROPORTÁTEIS">
+                            Eletroportáteis
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="FOTO & VÍDEO">
+                            Foto & vídeo
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="TABLET">
+                            Tablet
+                        </option>
+                        
+                        <option style="text-transform: capitalize" value="VENTILAÇÃO">
+                            Ventilação
+                        </option>
+                        
+                    </select>
+                    <img src="App_Themes/amvox/images/seta.png" style="margin-left: 156px; margin-top: 17px; position: absolute; z-index: 99;" alt="QCompra" />
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu bg-dark-blue right mt-20" style="width: 100%">
+            <div class="content">
+                <ul class="links-menu">
+                    <li class="initial-footer-todas-2 dropdown">
+                        <a href="javascript:void(0);" class="back-laranja-menu branco maiuscula proxima-bold tam-normal sem-borda">Todas as Categorias
+                        </a>
+                        
+                        <ul class="dropdown-content left-0">
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=%c3%81udio">Áudio</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=%c3%81udio&f_categoria=Caixa+Amplificada">
+                                            Caixa Amplificada
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=%c3%81udio&f_categoria=Autorr%c3%a1dio">
+                                            Autorrádio
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=%c3%81udio&f_categoria=Boombox">
+                                            Boombox
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Celular">Celular</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Celular&f_categoria=Celular+Barrinha">
+                                            Celular Barrinha
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Eletroport%c3%a1teis">Eletroportáteis</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Ferro+de+Passar">
+                                            Ferro de Passar
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Panela+El%c3%a9trica">
+                                            Panela Elétrica
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Bebedouro">
+                                            Bebedouro
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Churrasqueira+El%c3%a9trica">
+                                            Churrasqueira Elétrica
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Cafeteira">
+                                            Cafeteira
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Espremedor">
+                                            Espremedor
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Sanduicheira">
+                                            Sanduicheira
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Forno+El%c3%a9trico">
+                                            Forno Elétrico
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Pipoqueira">
+                                            Pipoqueira
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Foto+%26+V%c3%addeo">Foto & Vídeo</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=Conversor+Digital">
+                                            Conversor Digital
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=TV+Box">
+                                            TV Box
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=C%c3%a2mera+Digital">
+                                            Câmera Digital
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=DVD">
+                                            DVD
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Tablet">Tablet</a>
+                                
+
+                            </li>
+                            
+                            <li class="arrow">
+                                <a class="truncate" style="text-transform: capitalize!important; font-weight: 600" href="/consulta?f_secao=Ventila%c3%a7%c3%a3o">Ventilação</a>
+                                
+                                <ul class="block-subcat-todas">
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Ventila%c3%a7%c3%a3o&f_categoria=Ventilador">
+                                            Ventilador
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="item-subcat-todas">
+                                        <a href="/consulta?f_secao=Ventila%c3%a7%c3%a3o&f_categoria=Climatizador">
+                                            Climatizador
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+
+                    
+                    
+                    <li class="individual-links dropdown">
+                        <a href="/consulta?f_secao=%c3%81udio" style="line-height: 50px">
+                            <img src=/i/amvox/categoria/201896143810.png" alt="QCompra" onerror="this.style.display = 'none'">
+                            Áudio
+                        </a>
+                        
+                        <ul class="dropdown-content left-0">
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=%c3%81udio&f_categoria=Caixa+Amplificada" style="">Caixa Amplificada</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=%c3%81udio&f_categoria=Autorr%c3%a1dio" style="">Autorrádio</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=%c3%81udio&f_categoria=Boombox" style="">Boombox</a>
+                                
+                            </li>
+                            
+
+                          
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="individual-links dropdown">
+                        <a href="/consulta?f_secao=Eletroport%c3%a1teis" style="line-height: 50px">
+                            <img src=/i/amvox/categoria/201896143824.png" alt="QCompra" onerror="this.style.display = 'none'">
+                            Eletroportáteis
+                        </a>
+                        
+                        <ul class="dropdown-content left-0">
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Ferro+de+Passar" style="">Ferro de Passar</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Panela+El%c3%a9trica" style="">Panela Elétrica</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Bebedouro" style="">Bebedouro</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Churrasqueira+El%c3%a9trica" style="">Churrasqueira Elétrica</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Cafeteira" style="">Cafeteira</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Espremedor" style="">Espremedor</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Sanduicheira" style="">Sanduicheira</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Forno+El%c3%a9trico" style="">Forno Elétrico</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Eletroport%c3%a1teis&f_categoria=Pipoqueira" style="">Pipoqueira</a>
+                                
+                            </li>
+                            
+
+                          
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="individual-links dropdown">
+                        <a href="/consulta?f_secao=Foto+%26+V%c3%addeo" style="line-height: 50px">
+                            <img src=/i/amvox/categoria/201896143843.png" alt="QCompra" onerror="this.style.display = 'none'">
+                            Foto & Vídeo
+                        </a>
+                        
+                        <ul class="dropdown-content left-0">
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=Conversor+Digital" style="">Conversor Digital</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=TV+Box" style="">TV Box</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=C%c3%a2mera+Digital" style="">Câmera Digital</a>
+                                
+                            </li>
+                            
+                            <li class="group-list truncate">
+                                <a href="/consulta?f_secao=Foto+%26+V%c3%addeo&f_categoria=DVD" style="">DVD</a>
+                                
+                            </li>
+                            
+
+                          
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="menu-blackfriday">
+                        <a href="javascript:void(0)">
+                            <img src="App_Themes/amvox/images/bg_blackfriday.png" alt="QCompra" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <nav class="main mobile-out">
+        <div class="content">
+            
+            <ul>
+                <li class="all">
+                    
+                    
+                    <div class="box" style="margin-top: -40px;">
+                        
+                        
+                    </div>
+                    
+                </li>
+                
+                
+            </ul>
+        </div>
+    </nav>
+
+    
+</header>
+<main class="engloba-tudo">
+
+	<div class="clearfix"></div>
+	<section id="main">
+		<div class="content main">
+			<div class="history mobile-out">
+				<strong>Você está em:&nbsp;</strong>
+				<a href="/" title="Página Inicial">Início</a>&nbsp;-&nbsp;Pagamento
+			</div>
+			
+    
+
+<input type="hidden" value="" id="FormaPagamento" name="FormaPagamento" />
+<input type="hidden" value="" id="PedidoId" name="PedidoId" />
+
+
+<img src="App_Themes/amvox/images/etapa003.png" style="margin-bottom: 50px; margin-top: 20px;"/>
+<h2 class="home_title maiuscula proxima-regular tam-x-grande azul" style="border-bottom: 3px solid #ededed;margin-bottom: 40px; ">
+	<span style="padding-left: 20px;">
+		Forma de Pagamento
+	</span>
+</h2>
+<div class="bloco-selecao-pagamento">
+    <div class="payment-left">
+        <div class="payment-confirm-address">
+	        <h3><span class="number">1</span> Confirme o endereço de entrega</h3>
+	        
+
+<p class="dados-conteudo">
+	Rua&nbsp;Tomazinho Rezende,&nbsp;1074 - Daniel Fonseca - Uberlândia - MG - CEP: 38400326. <br>Referência: Na rua de baixa da uniube.
+</p>
+<div class="clearfix"></div><br />
+<div class="flt_left">
+	<input type="button" onclick="window.location.href='cadastroendereco.html'" class="btn-black" value="Escolher outro" />
+    <a href="pagamento2.html">
+        <input type="button" class="btn-red" id="confirm_address" value="Usar este" />
+
+    </a>
+</div>
+
+ 
+        </div>
+    </div>
+    <div class="payment-right">
+        <div class="payment-select-address disabled">
+		    <div class="mask"></div>
+	        <h3><span class="number">2</span> Defina a forma de envio</h3>
+	        <select id="formaenviopagamento">
+		        
+		<option value="-1">Selecione uma forma de envio</option>
+	
+		
+<option data-time="4 dias" data-term="Entrega em até 4 dias úteis" data-price="1708,6769975" data-name="SEDEX" value="3" >SEDEX - R$ 1.708,68 - Entrega em até 4 dias úteis</option>
+
+	
+		
+<option data-time="10 dias" data-term="Entrega em até 10 dias úteis" data-price="826,9311275" data-name="PAC" value="2" >PAC - R$ 826,93 - Entrega em até 10 dias úteis</option>
+
+	
+		
+<option data-time="15 dias" data-term="15 dias úteis" data-price="518,44695583333333333333333333" data-name="Transportadora 1" value="6" >Transportadora 1 - R$ 518,45 - 15 dias úteis</option>
+
+	
+	        </select>
+        </div>
+    </div>
+    <div class="payment-left" style="width: 100%;margin-top: 25px">
+        <div class="clearfix"></div>
+        <div class="flags_payment disabled">
+	        <div class="mask"></div>
+		    <h3><span class="number">3</span> Escolha a forma de pagamento</h3>
+	        
+	        <div id="formaspagamento">
+		        
+<div class="item_card all_corners hidden">
+	<label for="bandeira265" class="image">
+		<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_125X125.jpg?v=1" alt="Mercado Pago" title="Mercado Pago" />
+	</label>
+	<label for="bandeira265">Mercado Pago</label>
+	<div class="clearfix"></div>
+	<input name="bandeira" type="radio" id="bandeira265" data-description="Mercado Pago" value="265" data-price="3.112,90" data-type="17" data-tipo-bandeira="10"/>
+</div>
+
+
+
+		<div class="item_card all_corners">
+			<label for="bandeiravisa" class="image">
+				<img src="https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif" alt="Visa" title="Visa" />
+			</label>
+			<label for="bandeiravisa">Visa</label>
+			<div class="clearfix"></div>
+			<input name="bandeiraMP" type="radio" id="bandeiravisa" data-description="Visa" value="visa" data-price="3.112,90" data-type="" data-tipo-bandeira="credit_card" data-image="https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif" data-capture="supported" />
+		</div>
+	
+		<div class="item_card all_corners">
+			<label for="bandeiramaster" class="image">
+				<img src="https://www.mercadopago.com/org-img/MP3/API/logos/master.gif" alt="Mastercard" title="Mastercard" />
+			</label>
+			<label for="bandeiramaster">Mastercard</label>
+			<div class="clearfix"></div>
+			<input name="bandeiraMP" type="radio" id="bandeiramaster" data-description="Mastercard" value="master" data-price="3.112,90" data-type="" data-tipo-bandeira="credit_card" data-image="https://www.mercadopago.com/org-img/MP3/API/logos/master.gif" data-capture="supported" />
+		</div>
+	
+		<div class="item_card all_corners">
+			<label for="bandeirahipercard" class="image">
+				<img src="https://www.mercadopago.com/org-img/MP3/API/logos/hipercard.gif" alt="Hipercard" title="Hipercard" />
+			</label>
+			<label for="bandeirahipercard">Hipercard</label>
+			<div class="clearfix"></div>
+			<input name="bandeiraMP" type="radio" id="bandeirahipercard" data-description="Hipercard" value="hipercard" data-price="3.112,90" data-type="" data-tipo-bandeira="credit_card" data-image="https://www.mercadopago.com/org-img/MP3/API/logos/hipercard.gif" data-capture="supported" />
+		</div>
+	
+		<div class="item_card all_corners">
+			<label for="bandeiraamex" class="image">
+				<img src="https://www.mercadopago.com/org-img/MP3/API/logos/amex.gif" alt="American Express" title="American Express" />
+			</label>
+			<label for="bandeiraamex">American Express</label>
+			<div class="clearfix"></div>
+			<input name="bandeiraMP" type="radio" id="bandeiraamex" data-description="American Express" value="amex" data-price="3.112,90" data-type="" data-tipo-bandeira="credit_card" data-image="https://www.mercadopago.com/org-img/MP3/API/logos/amex.gif" data-capture="supported" />
+		</div>
+	
+		<div class="item_card all_corners">
+			<label for="bandeiradiners" class="image">
+				<img src="https://www.mercadopago.com/org-img/MP3/API/logos/diners.gif" alt="Diners" title="Diners" />
+			</label>
+			<label for="bandeiradiners">Diners</label>
+			<div class="clearfix"></div>
+			<input name="bandeiraMP" type="radio" id="bandeiradiners" data-description="Diners" value="diners" data-price="3.112,90" data-type="" data-tipo-bandeira="credit_card" data-image="https://www.mercadopago.com/org-img/MP3/API/logos/diners.gif" data-capture="supported" />
+		</div>
+	
+		<div class="item_card all_corners">
+			<label for="bandeiraelo" class="image">
+				<img src="https://www.mercadopago.com/org-img/MP3/API/logos/elo.gif" alt="Elo" title="Elo" />
+			</label>
+			<label for="bandeiraelo">Elo</label>
+			<div class="clearfix"></div>
+			<input name="bandeiraMP" type="radio" id="bandeiraelo" data-description="Elo" value="elo" data-price="3.112,90" data-type="" data-tipo-bandeira="credit_card" data-image="https://www.mercadopago.com/org-img/MP3/API/logos/elo.gif" data-capture="supported" />
+		</div>
+	
+		<div class="item_card all_corners">
+			<label for="bandeirapec" class="image">
+				<img src="https://www.mercadopago.com/org-img/MP3/API/logos/pec.gif" alt="Pagamento na lotérica sem boleto" title="Pagamento na lotérica sem boleto" />
+			</label>
+			<label for="bandeirapec">Pagamento na lotérica sem boleto</label>
+			<div class="clearfix"></div>
+			<input name="bandeiraMP" type="radio" id="bandeirapec" data-description="Pagamento na lotérica sem boleto" value="pec" data-price="3.112,90" data-type="" data-tipo-bandeira="ticket" data-image="https://www.mercadopago.com/org-img/MP3/API/logos/pec.gif" data-capture="supported" />
+		</div>
+	
+		<div class="item_card all_corners">
+			<label for="bandeirabolbradesco" class="image">
+				<img src="https://www.mercadopago.com/org-img/MP3/API/logos/bolbradesco.gif" alt="Boleto" title="Boleto" />
+			</label>
+			<label for="bandeirabolbradesco">Boleto</label>
+			<div class="clearfix"></div>
+			<input name="bandeiraMP" type="radio" id="bandeirabolbradesco" data-description="Boleto" value="bolbradesco" data-price="3.112,90" data-type="" data-tipo-bandeira="ticket" data-image="https://www.mercadopago.com/org-img/MP3/API/logos/bolbradesco.gif" data-capture="does_not_apply" />
+		</div>
+	
+	        </div>
+        </div>
+    </div>  
+    
+	    
+	    
+    <div class="payment-left some">
+	
+    <div class="control form_fields payment" style="display:none" id="dados-cartao-mercadopago">
+	<h3>
+        <span class="number">4</span>
+	    Preencha os dados do cartão
+	</h3>
+	
+	<div class="clearfix"></div>
+	<div class="display_field first">
+		<label for="cardNumber">Número do Cartão:</label>
+		<input type="text" id="cardNumber" data-checkout="cardNumber" placeholder="0000 0000 0000 0000" style="width:212px" onpaste="return false" ondrop="return false" />
+	</div>
+	<div class="clearfix"></div>
+	<div class="display_field first">
+		<label for="cardExpirationMonth">Mês de validade:</label>
+		<input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" placeholder="00" style="width:100px"/>
+	</div>
+	<div class="display_field">
+		<label for="cardExpirationYear">Ano de expiração:</label>
+		<input type="text" id="cardExpirationYear" data-checkout="cardExpirationYear" placeholder="0000" style="width:110px"/>
+	</div>
+	<div class="display_field first hidden">
+		<label for="email">Email</label>
+		<input id="email" name="email" value="otavio.silva@openk.com.br" type="text" readonly style="width:320px" />
+	</div>
+    <div class="clearfix"></div>
+	<div class="display_field first">
+		<label for="cardholderName">Nome completo: <small>Exatamente como impresso no cartão</small></label>
+		<input type="text" id="cardholderName" data-checkout="cardholderName" placeholder="" style="width:280px" />
+	</div>
+		
+	<div class="clearfix"></div>
+	<div class="display_field first">
+		<label for="securityCode">Código de segurança:</label>
+		<input type="text" id="securityCode" data-checkout="securityCode" placeholder="000" style="width:130px" />
+	</div>
+	<div class="display_field hidden">
+		<label for="docType">Tipo de documento:</label>
+		<select id="docType" data-checkout="docType" style="width:120px"></select>
+	</div>
+	<div class="display_field">
+		<label for="docNumber">CPF: <small>(CPF do titular do cartão)</small></label>
+		<input type="text" id="docNumber" data-checkout="docNumber" placeholder="000.000.000-00" style="width:150px" value="05160816321" />
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="display_field first">
+		<label for="installments">Parcelamento:</label>
+		<select id="installments" name="installments" style="width:440px"></select>
+	</div>
+	<div class="display_field" id="issuer-div">
+		<label for="issuer">Emissor:</label>
+		<select id="issuer" name="issuer"></select>
+	</div>
+</div>
+    <div class="clearfix"></div><br />
+        
+    <div class="payment-parcel">
+	    <h3>4. Como você deseja parcelar?</h3>
+	    <div class="options"></div>
+    </div>
+	
+    <div class="clearfix"></div>
+    <input type="submit" name="ctl00$ContentPlaceHolder1$UCPagamento1$ctl00$BotaoFinalizarPedido1" value="FINALIZAR COMPRA" id="ctl00_ContentPlaceHolder1_UCPagamento1_ctl00_BotaoFinalizarPedido1" data-finalize="yes" class="hidden" />
+
+    
+
+    <div class="finalizar" style="display: none">
+        <div class="flt_left">
+            <a href="javascript:void(0)" id="close-purchase" class="btn-pagar-agora" title="FINALIZAR COMPRA" style="float: right">
+                <span class="arrow" style="background-image: url(App_Themes/amvox/images/white-correct.png)"></span>
+                PAGAR AGORA
+            </a>
+            <a href="javascript:void(0)" onclick="jInfo('<div style=\'width:400px;height:700px\'><img src=\'App_Themes/amvox/images/Educativo-passo_a_passo-10x.jpg\' alt=\'\' /></div>','Mercado Pago')" style="float: left; margin-left: 15px">
+                <img style="margin:10px 10px 0 0" src="App_Themes/amvox/images/mp_processado_02.png" alt="Processado por Mercado Pago" />
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+<div style="width: 100%;float:left">
+	
+    <h2 class="resumeShopping home_title maiuscula proxima-regular tam-x-grande branco">
+		<div style="width: 100%;
+							background-color: #35befe;
+							border-radius: 3px 3px 0 0;
+							padding-left: 40px;">
+			<span style="color: white;
+									border-bottom: none;
+									font-family: proxima_nova_rgregular, sans-serif;">
+				Resumo da Compra
+			</span>
+		</div>
+    </h2>
+    <div class="clearfix"></div>
+
+    <table class="table_cart payment" 
+		style="
+					width: 54%; 
+					margin-left: 20px;
+					border-collapse: separate;
+					border-spacing: 0 1em;
+					float: left;">
+	    <tbody>
+		    
+		    <tr class="payment-produtos">
+			    <td style="background-color: white; width: 70px; border: 1px solid #c6c8ca; border-radius: 3px;">
+				    <div class="product-image">
+					    
+					    <img src="https://www.qcompra.com.br/i/amvox/home/2100011.jpg" width="65" height="65" alt="Churrasqueira Elétrica Amvox ACH 1500 Mesa 2000W" title="Churrasqueira Elétrica Amvox ACH 1500 Mesa 2000W" style="margin-top: 5px; margin-left: 5px;"/>
+					    
+				    </div>
+			    </td>
+				<td style="width: 10px; background: white;"></td>
+			    <td style="border-radius: 3px 0 0 3px;">
+				    
+				    <h2 class="product_name proxima-regular maiuscula tam-pequeno" style="margin-bottom: 5px; color:#58585a">Churrasqueira Elétrica Amvox ACH 1500 Mesa 2000W&nbsp;-&nbsp;110V</h2>
+				    <span class="book-italic tam-pequeno" style="color: #58585a;">
+						<strong>Quantidade: </strong>
+						1
+					</span>
+			    </td>
+			    <td style="border-radius: 0 3px 3px 0; width: 250px;">
+				    <div class="unitario proxima-regular tam-pequeno">
+					    <div class="flt_right" style="padding-right: 15px">R$ 115,90</div>
+					    <div class="flt_left proxima-regular tam-pequeno maiuscula" style="padding-left: 15px; color: #58585a;"><strong>Valor unit.</strong> </div>
+				    </div>
+				    <div class="clearfix"></div>
+				    <div class="subtotal proxima-regular tam-pequeno">
+					    <div class="flt_right" style="padding-right: 15px">R$ 115,90</div>
+					    <div class="flt_left proxima-regular tam-pequeno maiuscula" style="padding-left: 15px; color: #58585a;"><strong>Subtotal</strong></div>
+				    </div>
+			    </td>
+		    </tr>
+		    
+		    <tr class="payment-produtos">
+			    <td style="background-color: white; width: 70px; border: 1px solid #c6c8ca; border-radius: 3px;">
+				    <div class="product-image">
+					    
+					    <img src="https://www.qcompra.com.br/i/amvox//5033721.jpg" width="65" height="65" alt="Caixa Amplificada Amvox ACA 750 Turbo Led Bluetooth USB MicroSD Auxiliar Rádio FM Bivolt 750W" title="Caixa Amplificada Amvox ACA 750 Turbo Led Bluetooth USB MicroSD Auxiliar Rádio FM Bivolt 750W" style="margin-top: 5px; margin-left: 5px;"/>
+					    
+				    </div>
+			    </td>
+				<td style="width: 10px; background: white;"></td>
+			    <td style="border-radius: 3px 0 0 3px;">
+				    
+				    <h2 class="product_name proxima-regular maiuscula tam-pequeno" style="margin-bottom: 5px; color:#58585a">Caixa Amplificada Amvox ACA 750 Turbo Led Bluetooth USB MicroSD Auxiliar Rádio FM Bivolt 750W</h2>
+				    <span class="book-italic tam-pequeno" style="color: #58585a;">
+						<strong>Quantidade: </strong>
+						3
+					</span>
+			    </td>
+			    <td style="border-radius: 0 3px 3px 0; width: 250px;">
+				    <div class="unitario proxima-regular tam-pequeno">
+					    <div class="flt_right" style="padding-right: 15px">R$ 999,00</div>
+					    <div class="flt_left proxima-regular tam-pequeno maiuscula" style="padding-left: 15px; color: #58585a;"><strong>Valor unit.</strong> </div>
+				    </div>
+				    <div class="clearfix"></div>
+				    <div class="subtotal proxima-regular tam-pequeno">
+					    <div class="flt_right" style="padding-right: 15px">R$ 2.997,00</div>
+					    <div class="flt_left proxima-regular tam-pequeno maiuscula" style="padding-left: 15px; color: #58585a;"><strong>Subtotal</strong></div>
+				    </div>
+			    </td>
+		    </tr>
+		    
+	    </tbody>
+		
+    </table>
+    <table class="table_cart details" style="width: 40%;float: right; margin-right: 20px; margin-top: 16px; border-collapse: separate; border-spacing: 0 3px">
+	    <tbody>
+		    <tr>
+			    <td class="bg-lbl-td proxima-regular tam-pequeno maiuscula" style="border-left: 0!important; width: 212px;">
+					<strong>Tipo de entrega</strong>
+			    </td>
+			    <td id="FormaEnvioDescricao" class="bg-td cinza-escuro-fraco maiuscula tam-pequeno">
+					
+			    </td>
+             </tr>
+			<tr>
+			    <td class="bg-lbl-td proxima-regular tam-pequeno maiuscula" style="border-left: 0!important">
+					<strong>Prazo de entrega</strong>
+			    </td>
+			    <td id="EntregaEstimada" class="bg-td cinza-escuro-fraco maiuscula tam-pequeno "></td>
+		    </tr>
+		    <tr>
+			    <td class="bg-lbl-td proxima-regular tam-pequeno maiuscula" style="border-left: 0!important">
+					<strong>Forma de pagamento</strong>
+			    </td>
+			    <td class="setTypeDescription bg-td cinza-escuro-fraco maiuscula tam-pequeno">SELECIONE O MEIO DE PAGAMENTO</td>
+            </tr>
+			<tr>
+                <td class="bg-lbl-td proxima-regular tam-pequeno maiuscula" style="border-left: 0!important" >
+					<strong>Valor do frete</strong>
+                </td>
+			    <td class="bg-td cinza-escuro-fraco maiuscula tam-pequeno">
+					R$ 
+					<span id="ValorFreteSelecionado">
+						0,00
+					</span>
+			    </td>
+		    </tr>
+            <tr>
+                <td class="bg-lbl-td proxima-regular tam-pequeno maiuscula" style="border-left: 0!important"><strong>Parcelado em</strong></td>
+			    <td class="setTypeNumber bg-td cinza-escuro-fraco maiuscula tam-pequeno">(Selecione a parcela)</td>
+            </tr>
+			<tr>
+			    <td class="bg-lbl-td proxima-regular tam-pequeno maiuscula" style="border-left: 0!important"><strong>Desconto</strong></td>
+			    <td class="bg-td proxima-regular cinza-escuro-fraco maiuscula tam-pequeno">R$ <span id="DescontoCarrinho">0,00</span></td>
+            </tr>
+			<tr>
+				<td style="height: 50px; 
+									background:#35befe; 
+									border-radius: 3px;
+									font-family: proxima_nova_altextrabold, sans-serif;
+									color: white;
+									font-size: 25px;
+									padding-left: 20px;" 
+					colspan="2">
+					TOTAL: 
+					<span style="color: #fff000; 
+											font-size: 27px;
+											margin-right: 20px;
+											float: right;">
+						<small>R$</small>
+						3.112,90		
+					</span>
+				</td>
+			</tr>
+	    </tbody>
+    </table>
+	<div class="finalizar" style="float:right;margin-top: 5px;margin-bottom: 30px; margin-top: 30px; clear: right; margin-right: 20px; display: none">
+	    <a href="javascript:void(0)" onclick="document.getElementById('close-purchase').click()" class="btn-pagar-agora" title="FINALIZAR COMPRA">
+	        <span class="arrow" style="background-image: url(App_Themes/amvox/images/white-correct.png)"></span>
+	        PAGAR AGORA
+	    </a>
+	</div>
+    <div class="clearfix"></div>
+    <input type="hidden" id="ValorTotalCarrinho" value="3.112,90" />
+    
+    <div class="clearfix"></div>
+
+    
+    
+</div>
+<div class="clearfix"></div>
+<div class="clearfix"></div><br />
+    <input name="ctl00$ContentPlaceHolder1$txtForma" type="hidden" id="ctl00_ContentPlaceHolder1_txtForma" CampoForma="hidden" />
+    <input name="ctl00$ContentPlaceHolder1$txtDataAgendamento" type="hidden" id="ctl00_ContentPlaceHolder1_txtDataAgendamento" CampoDataDevolucao="hidden" />
+    <input name="ctl00$ContentPlaceHolder1$descritor_predefinido_1" type="hidden" id="ctl00_ContentPlaceHolder1_descritor_predefinido_1" descritor_predefinido_1="hidden" />
+    <input name="ctl00$ContentPlaceHolder1$descritor_predefinido_2" type="hidden" id="ctl00_ContentPlaceHolder1_descritor_predefinido_2" descritor_predefinido_2="hidden" />
+    <input name="ctl00$ContentPlaceHolder1$descritor_predefinido_3" type="hidden" id="ctl00_ContentPlaceHolder1_descritor_predefinido_3" descritor_predefinido_3="hidden" />
+    <input name="ctl00$ContentPlaceHolder1$descritor_predefinido_4" type="hidden" id="ctl00_ContentPlaceHolder1_descritor_predefinido_4" descritor_predefinido_4="hidden" />
+    <input name="ctl00$ContentPlaceHolder1$descritor_predefinido_5" type="hidden" id="ctl00_ContentPlaceHolder1_descritor_predefinido_5" descritor_predefinido_5="hidden" />
+    <input name="ctl00$ContentPlaceHolder1$descritor_predefinido_6" type="hidden" id="ctl00_ContentPlaceHolder1_descritor_predefinido_6" descritor_predefinido_6="hidden" />
+    <input name="ctl00$ContentPlaceHolder1$descritor_predefinido_7" type="hidden" id="ctl00_ContentPlaceHolder1_descritor_predefinido_7" descritor_predefinido_7="hidden" />
+    <input name="ctl00$ContentPlaceHolder1$descritor_predefinido_8" type="hidden" id="ctl00_ContentPlaceHolder1_descritor_predefinido_8" descritor_predefinido_8="hidden" />
+	<input name="ctl00$ContentPlaceHolder1$valida_forma_envio" type="hidden" id="ctl00_ContentPlaceHolder1_valida_forma_envio" valida_forma_envio="hidden" value="1" />
+    <input name="ctl00$ContentPlaceHolder1$descricao_forma_entrega" type="hidden" id="ctl00_ContentPlaceHolder1_descricao_forma_entrega" descricao_forma_entrega="hidden" />
+
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+<div class="clearfix"></div>
+</main>
+<section class="footer-search mobile-out back-laranja" id="rodape">
+	<div class="content">
+		<h3 class="maiuscula proxima-regular left">Ainda não encontrou o que procura?</h3>
+		<div class="form">
+			<ul class="right">
+				<li class="initial-footer-search right">
+					<div class="wrap-search">
+						<div class="fx">
+							<input type="text" placeholder="O que você está procurando?" id="search_query_2" name="search_query_2" class="text_field" />
+							<input type="button" value="pesquisar" id="search_submit_2" class="branco back-azul" name="search_submit_2" />
+						</div>
+					</div>
+				</li>
+				<li class="initial-footer-todas right">
+					<div class="triangulo-esquerdo absolute right"></div>
+					<select class="absolute proxima-regular tam-normal cinza-escuro back-cinza absolute initial-footer-todas__btn">
+						<option value="" style="text-transform: none;"> Todas as Categorias</option>
+							
+							
+								<option style="text-transform: capitalize" value="ÁUDIO">
+										Áudio
+								</option>
+							
+								<option style="text-transform: capitalize" value="ELETROPORTÁTEIS">
+										Eletroportáteis
+								</option>
+							
+								<option style="text-transform: capitalize" value="FOTO & VÍDEO">
+										Foto & vídeo
+								</option>
+							
+					</select>
+					<img src="App_Themes/amvox/images/seta.png" style="margin-left: 156px; margin-top: 17px; position: absolute; z-index: 99;" alt="QCompra"/>
+				
+					
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</section>
+<footer class="main-footer mobile-out back-azul">
+    <div class="content">
+		<div class="footer-empresa left">
+			<div>
+				<img src="App_Themes/amvox/images/novo-logo.png" width="220" height="50" alt="QCompra"/>
+			</div>
+			<div class="footer-empresa-sociais texto-centro">
+                <a href="https://www.facebook.com/qcompraoficial2018" target="_blank">
+				    <img src="App_Themes/amvox/images/FACE.png" alt="QCompra"/>
+                </a>
+                <a href="https://www.instagram.com/qcompra/" target="_blank">
+				    <img src="App_Themes/amvox/images/instagram_icon_footer.png" alt="QCompra"/>
+                </a>
+			</div>
+			<div class="proxima-regular tam-pequeno branco">
+				<p>
+					
+					<link href="" rel="stylesheet" type="text/css" />
+<!--CSS_site-->
+<link href="" rel="stylesheet" type="text/css" />
+<!--CSS_site-->
+<link href="" rel="stylesheet" type="text/css" />
+<!--CSS_site-->
+<link href="" rel="stylesheet" type="text/css" />
+<!--CSS_site--><!--CSS_site-->
+<p>
+	&nbsp;</p>
+<p style="text-align: center;">
+	<span style="font-size:16px;"><strong>Sua compra em um clique</strong></span></p>
+				</p>
+			</div>
+		</div>
+		<div class="left footer-departamentos">
+			<h3 class="proxima-regular maiuscula tam-x-grande branco">
+				Nossos Departamentos:
+			</h3>
+			<div class="open-regular tam-normal">
+				<ul>
+					
+					
+					<li class="left" >
+						<a href="/consulta?f_secao=%c3%81udio" title="Áudio" style=" text-transform: capitalize;">
+								áudio
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Celular" title="Celular" style=" text-transform: capitalize;">
+								celular
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Eletroport%c3%a1teis" title="Eletroportáteis" style=" text-transform: capitalize;">
+								eletroportáteis
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Foto+%26+V%c3%addeo" title="Foto & Vídeo" style=" text-transform: capitalize;">
+								foto & vídeo
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Tablet" title="Tablet" style=" text-transform: capitalize;">
+								tablet
+						</a>
+					</li>
+				    
+					<li class="left" >
+						<a href="/consulta?f_secao=Ventila%c3%a7%c3%a3o" title="Ventilação" style=" text-transform: capitalize;">
+								ventilação
+						</a>
+					</li>
+				    
+
+
+					
+				</ul>
+			</div>
+		</div>
+        
+		    
+    </div>
+	<div class="clearfix"></div>
+</footer>
+<footer class="back-cinza-claro">
+	<div class="footer-meio centro">
+		<div class="footer-meio-atendimento left cinza-escuro tam-normal proxima-regular">
+			<div class="proxima-bold">
+				Atendimento 
+				
+				
+<!--CSS_site-->
+<br />
+<strong>Funcionamento:</strong>Segunda &agrave; Sexta, das 08h00 &agrave;s 17h30<br />
+<strong>Email:</strong> contato@qcompra.com.br
+			</div>
+			<div>
+				<span class="proxima-bold maiuscula">Sac:</span> 
+				
+				
+<!--CSS_site-->
+
+<!--CSS_site--><!--CSS_site-->(71) 2886-0105
+			</div>
+			<br />
+			<div class="proxima-bold">
+				QCompra
+			</div>
+			<div>
+				
+				
+<!--CSS_site-->
+
+<!--CSS_site-->
+
+<!--CSS_site--><!--CSS_site-->Rua B, POLOPLAST, S/N, Galp&atilde;o, Bairro Jardim Limoeiro - Cama&ccedil;ari-BA<br />
+<strong>CEP:</strong> 42.802-580<br />
+				
+				
+<!--CSS_site-->
+
+<!--CSS_site--><!--CSS_site-->30.311.794/0001-75
+			</div>
+		</div>
+		<div class="left footer-meio-links">
+			<div class="proxima-regular tam-normal">
+				<ul>
+					<li class="left">
+						<a href="/conteudo/1/Politica-de-Entrega">Politica de Entrega</a>
+					</li>
+					<li class="left">
+						<a href="/conteudo/2/Politica-de-Entrega">Política de privacidade</a>
+					</li>
+					<li class="left">
+						<a href="/conteudo/3/Politica-de-Entrega">Política de troca</a>
+					</li>
+					<li class="left">
+						<a href="/conteudo/4/Politica-de-Entrega">Termos e condições</a>
+					</li>
+					<li class="left">
+						<a href="/FaleConosco.aspx">Fale Conosco</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-meio-pagamentos left">
+			<div class="wrapper">
+				
+				<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_125X125.jpg?v=1" alt="Mercado Pago" title="Mercado Pago" />
+				
+                <div class="footer-empresa-seguro" style="display: block;float: right;margin-top: 0">
+				    <img src="App_Themes/amvox/images/SITE-SEGURO.png" alt="QCompra"/>
+                    <div class="clearfix"></div>
+                    <img src="App_Themes/amvox/images/RapidSSL.gif" alt="QCompra" height="50"/>
+			    </div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+		
+
+	
+<div class="clearfix"></div>
+<div class="development proxima-regular tam-pequeno azul">
+	Desenvolvido por: <a href="http://www.cuboamarelo.com" title="Cubo Amarelo" target="_blank">Cubo Amarelo</a> • Tecnologia: <a href="http://www.openk.com.br" title="OpenK" target="_blank">OpenK</a>
+</div>
+
+<!-- BEGIN JIVOSITE CODE -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'shAaPXxDXO';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- END JIVOSITE CODE -->
+
+<script type="text/javascript">
+                          var _gaq = _gaq || [];
+                          _gaq.push(['_setAccount', 'UA--1']);
+                          _gaq.push(['_trackPageview']);
+                          (function() {
+                            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                          })();
+                        </script>
+<script src="/Library/Templates/amvox/js/plugins.js?1585345"></script>
+<script src="/Library/JavaScript/Global/FrameWork/jquery.validate.1.5.2.js" ></script>
+<script src="/jquery/jquery-validate/localization/messages_ptbr.js" ></script>
+<script src="/Library/Templates/amvox/js/main.js?1585345"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5922e1c6c4fd4ea8"></script> 
+	<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+	
+		<script type="text/javascript">
+			Mercadopago.setPublishableKey("APP_USR-a9823b25-d18f-47f2-b867-8fff49ea24c9");
+			Mercadopago.getIdentificationTypes();
+		</script>
+	
+	<script type="text/javascript" src="/Library/Templates/amvox/js/pagamento.js"></script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1F7AE682" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA5jI+fxQLO6HFjwPcQljHuqpwgt8fa3cCcSlV77h5OlgVOdpwjca4b5o4PGp/sq1bYFG9hu5WCxP7bFj4eXDJ9QLQdje4oE+guEaDZRGl/JHqvOt2PSHk3ccfn1Ci6sXxT3d11ad0jMUdoPfuzZgAzIN9bl5PagjO/dMlq6jbCGrw4CCPdAmpu1zBmqwwE3SjNQUsqPmggmLKpk3GbjZnELV1cVbRl9VdTZreZax6wKsJuUmtZfOoZgQciz64pSzdQ5+HV+xh4CpM4VXDjtX8QhY0eKi5Ud75HqxkJYXR/obmR3wSBGAwlAWMASYk5Kz3jH7VDGZUsWv3fM24dFTLG4" />
+</div></form>
+</body>
+</html>
